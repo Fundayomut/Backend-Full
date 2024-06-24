@@ -1,0 +1,95 @@
+.nebeneinander
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav{
+    background-image: linear-gradient(rgb(69, 179, 243), rgb(176, 219, 243));
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+  }
+  li{
+    list-style: none;
+    display: inline;
+    margin-left: 20px;
+  }
+  .navrightdiv{
+    text-align: center;
+    margin-right: 20px;
+  }
+  .navleftdiv{
+    width: 90%;
+  }
+
+  li:hover{
+    border: solid 2px #295a69; 
+    padding: 5px;
+    border-radius: 8px;
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  table {
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+  th{
+    border-bottom: 1px solid ;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+  
+  td{
+    text-align: left;
+  }
+  .einstellungendiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button{
+    background-image: linear-gradient( to top, rgb(89, 65, 65), rgb(110, 49, 49));
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  button:hover{
+    background-image: linear-gradient( to top, rgb(142, 111, 111), rgb(179, 86, 86));
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: 2px outset rgba(94, 51, 51, 0.467);
+  }
+  .hinzupar{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+input{
+  margin-left: 10px;
+}
+.inputort{
+  margin-right: 10px;
+}
+.artikelhindiv{
+  width: 40%;
+  text-align: center;
+}
+.warenkorbli{
+    display: flex;
+    justify-content: space-around;
+}
