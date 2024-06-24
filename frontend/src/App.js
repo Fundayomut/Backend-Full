@@ -27,6 +27,7 @@ import {
 } from "react-router-dom";
 import { AuthKontext, AuthDienst } from "./AnmeldeSteuerung";
 import Eintstellungen from "./Eintstellungen";
+import { Bestellung } from "./Bestellung";
 
 function App() {
   const { istAuthentifiziert, kontoTypWert, logout } = useContext(AuthKontext);
@@ -65,11 +66,11 @@ function App() {
                         <li>
                           <Link to="/Warenkorp">Warenkorp</Link>
                         </li>
-                        <li>Bestellungen</li>
+                        <li><Link to="/Bestellung">Bestellungen</Link></li>
                         <li>
                           <Link to="/Eintstellungen">Einstellungen</Link>
                         </li>
-                        <li>Kontakt</li>
+                        <li><Link to="/Kontakt">Kontakt</Link></li>
                       </ul>
                     </div>
                     <div className="navrightdiv">
@@ -142,6 +143,9 @@ function App() {
                 ):(<Navigate to="/Home"/>)}/>
                 <Route path="/Warenkorp" element={istAuthentifiziert === true && kontoTypWert === 0 ? (
                   <Warenkorp/>
+                ):(<Navigate to="/Home"/>)}/>
+                <Route path="/Bestellung" element={istAuthentifiziert === true && kontoTypWert === 0 ? (
+                  <Bestellung/>
                 ):(<Navigate to="/Home"/>)}/>
               </Routes>
             </main>

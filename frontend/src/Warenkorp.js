@@ -16,8 +16,6 @@ const deleteItem=(id)=>{
 };
 
 
-
-
   return (
     <div>
      {/*<p>warenkorp</p>*/}
@@ -35,6 +33,9 @@ const deleteItem=(id)=>{
         })
        ):("")}
       </ul>
+      <div className="wkaufbut">
+        <button>Kaufen</button>
+      </div>
     </div>
   );
 }
