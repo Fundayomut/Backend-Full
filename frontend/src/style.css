@@ -97,3 +97,18 @@ input{
   display: flex;
   justify-content: center;
 }
+.shoppendiv{
+display: flex;
+justify-content: space-between;
+}
+.shoppenul{
+  width: 60%;
+  margin-left: 60px;
+}
+.nebeneinander{
+  display: flex;
+  align-items: center;
+}
+.nebeneinander label{
+  margin-right: 10px;
+}

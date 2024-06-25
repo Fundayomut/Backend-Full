@@ -91,9 +91,9 @@ function ArtikelAngebot({Daten})
                             {name}
                         </label>
                         <div>
-                            <input type = "number" placeholder="Menge..." onChange={(e)=>setMenge(e.target.value)} />
-                        </div>
+                        <input type = "number" placeholder="Menge..." onChange={(e)=>setMenge(e.target.value)} />
                         <button onClick={()=>InDenWarenkorb()}>In den Warenkorb</button>
+                        </div>
                     </li>
                 
         </>
@@ -124,8 +124,8 @@ useEffect(()=>{
 
 
   return (
-   <>
-   <ul>
+   <div  className="shoppendiv"> 
+   <ul className="shoppenul">
     {alleartikel.map(
         (zeile)=>{
             return(
@@ -134,6 +134,6 @@ useEffect(()=>{
         }
     )}
     </ul>
-   </>
+   </div>
   )
 }
